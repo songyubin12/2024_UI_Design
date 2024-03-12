@@ -1,5 +1,5 @@
 let input = document.getElementById("input");
-let brn = document.getElementById("btn-barcode-generator");
+let btn = document.getElementById("btn-barcode-generator");
 btn.addEventListener("click", () => {
     JsBarcode("#barcode", input.value, {
         format: "code128",
@@ -8,7 +8,6 @@ btn.addEventListener("click", () => {
         lineColor: "#000",
     });
 });
-
 window.onload = (event) => {
     input.value = "";
 };

@@ -1,9 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    block-size: border-box;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    
 }
 
 body {
@@ -24,14 +23,13 @@ body {
 h1 {
     font-size: 2em;
     margin-bottom: 1em;
-
 }
+
 input {
     width: 60%;
     border: 1px solid #000000;
     padding: 1em;
     border-radius: 0.7em;
-
 }
 
 button {
