@@ -1,73 +1,74 @@
-body {
-    background-color: #305dcf;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.emoji {
+body {
+    background-color: #f8db94;
+}
+
+.container {
+    height: 600px;
+    width: 700px;
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+}
+
+.popsicle {
+    width: 180px;
     height: 300px;
-    width: 300px;
-    background-image: radial-gradient(#feca3e 58%, #ff8000 80%);
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 45px;
+    border-radius: 90px 90px 20px 20px;
 }
 
-.eyes {
-    display: flex;
-}
-
-.eye {
-    border: solid #663d0f;
-    border-width: 0 16px 16px 0;
+.popsicle::before {
     position: absolute;
-    padding: 18px;
+    content: "";
+    height: 180px;
+    width: 15px;
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 15px;
+    right: 20px;
+    top: 60px;
 }
 
-.left {
-    transform: rotate(-45deg);
-    top: 90px;
-    left: 25%;
-}
-
-.right {
-    transform: rotate(135deg);
-    top: 90px;
-    right: 25%;
-}
-
-.mouth {
-    height: 100px;
-    width: 220px;
-    background-color: #663d0f;
+.popsicle::after {
     position: absolute;
+    content: "";
+    height: 180px;
+    width: 30px;
+    background-color: #dba55b;
+    top: 300px;
     margin: auto;
     left: 0;
     right: 0;
-    bottom: 25px;
-    overflow: hidden;
-    border-radius: 5px 5px 180px 180px;
+    border-radius: 0 0 20px 20px;
 }
 
-.teeth {
-    height: 40px;
-    width: 220px;
-    background-color: #e9fdfa;
-    position: absolute;
-    bottom: 75px;
-    border-radius: 5px 5px 80px 80px;
+.popsicle-1 {
+    background-image: repeating-linear-gradient(135deg,
+            #ff7eaf 0,
+            #ff7eaf 20px,
+            #ff0565 20px,
+            #ff0565 40px);
 }
 
-.tongue {
-    height: 70px;
-    width: 105px;
-    position: absolute;
-    background-color: red;
-    border-radius: 50%;
-    transform: translate(50%);
-    top: 70px;
+.popsicle-2 {
+    background-size: 60px 300px;
+    background-image: radial-gradient(circle at 30px 53px,
+            #521a01 80px,
+            #ffba00 81px);
+}
+
+.popsicle-3 {
+    background-color: #5e3a16;
+    background-image: radial-gradient(#c39a6b 4px,
+            transparent 4px);
+    background-size: 30px 30px;
 }
